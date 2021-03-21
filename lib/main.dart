@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:capstone/nav.dart';
+import 'package:capstone/widgets/nav.dart';
 void main() {
   runApp(MyApp());
 }
