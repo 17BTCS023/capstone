@@ -45,32 +45,37 @@ class _NavState extends State<Nav> {
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.lightbulb_outline),
-            title: Text('Learn'),
+            icon: Icon(Icons.lightbulb_outline,),
+            label: "Learn",     
+            backgroundColor: Colors.black87
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.show_chart),
-            title: Text('Invest'),
+            label: 'Invest',
+            backgroundColor: Colors.black87
           ),
             BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            label: 'Home',
+            backgroundColor: Colors.black87
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.pie_chart_outlined),
-            title: Text('Budget'),
+            label: 'Budget',
+            backgroundColor: Colors.black87
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
-            title: Text('Profile'),
+            label: 'Profile',
+            backgroundColor: Colors.black87
           ),          
       ],
       currentIndex: _selectedIndex,
       onTap: _onItemTap,
       backgroundColor: kBackgroundColor,
       selectedItemColor: kActiveIconColor,
-      unselectedItemColor: kInactiveIconColor,
-      //type: BottomNavigationBarType.fixed,
+      //unselectedItemColor: kInactiveIconColor,
+      type: BottomNavigationBarType.shifting,
       )
       ,
     );
